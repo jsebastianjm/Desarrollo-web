@@ -1,35 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reposteria - Inicio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body bgcolor="white">
-    <div class="banner">
-        <img src="imagenes/banner.jpg" alt="Reposteria">
-        <div class="texto_banner">
-            <h1>INICIO</h1>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="contactanos.html">Contactanos</a></li>
-            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="menu.html">Menú</a></li>
-        </ul>
-    </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Reposteria</h1> <!--Titulo-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <font face="Georgia" size="6">
-    <p><h4>¡Bienvenido a La casa del pastel!<br>Aquí podras probar los pasteles y tartas mas deliciosos que hay</h4></p>
-    <p>
-        <ul>
-            <li><a href="contactanos.html">Contactanos</a></li>
-            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="menu.html">Menú</a></li>
-        </ul>
-    </p>
-    </font>
-</body>
-</html
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a> <!--Espacio para logo-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><!--Boton actual: Inicio-->
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item"><!--Boton Contactanos-->
+          <a class="nav-link" href="contactanos.html">Contactanos</a>
+        </li>
+        <li class="nav-item"><!--Boton Contactanos-->
+          <a class="nav-link" href="contactanos.html">Sobre nosotros</a>
+        </li>
+        <li class="nav-item dropdown"><!--Menú Desplegable-->
+          <a class="nav-link dropdown-toggle" href="menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menú
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pasteles.html">Pasteles</a></li>
+            <li><a class="dropdown-item" href="donas.html">Donas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    
+  </body>
+</html>
